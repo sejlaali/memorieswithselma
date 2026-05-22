@@ -1,0 +1,1721 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Memories with Selma — Event content creation, NYC & beyond</title>
+    <meta
+      name="description"
+      content="Candid, content-first coverage for weddings and events across New York City and beyond. Reels, TikToks, and raw footage delivered in 48 hours."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --cream: #efeae3;
+        --cream-2: #e7e1d6;
+        --cream-3: #ddd5c7;
+        --ink: #1a1714;
+        --ink-soft: #2d2823;
+        --muted: #7a7264;
+        --line: #c9c0b0;
+        --black: #0b0907;
+        --maxw: 1240px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background: var(--cream);
+        color: var(--ink);
+        font-family: "Jost", system-ui, sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .serif {
+        font-family: "Cormorant Garamond", "Times New Roman", serif;
+        font-weight: 400;
+      }
+      .eyebrow {
+        font-family: "Jost", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+      }
+      .wrap {
+        max-width: var(--maxw);
+        margin: 0 auto;
+        padding: 0 36px;
+      }
+      @media (max-width: 700px) {
+        .wrap {
+          padding: 0 22px;
+        }
+      }
+
+      /* ---------- NAV ---------- */
+      nav.top {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: rgba(239, 234, 227, 0.85);
+        backdrop-filter: blur(14px);
+        border-bottom: 1px solid rgba(26, 23, 20, 0.08);
+      }
+      nav.top .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+      .brand .mark {
+        width: 38px;
+        height: 38px;
+        background: url("https://res.cloudinary.com/dozkrpikv/image/upload/v1779482949/Untitled_Design_-_1_vy71si.jpg")
+          center/cover no-repeat;
+        mix-blend-mode: multiply;
+      }
+      .brand .name {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 18px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+      .brand .name b {
+        font-weight: 600;
+      }
+      nav.top ul {
+        display: flex;
+        gap: 36px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav.top ul a {
+        font-size: 12px;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+        transition: color 0.2s;
+      }
+      nav.top ul a:hover {
+        color: var(--ink);
+      }
+      .nav-cta {
+        border: 1px solid var(--ink);
+        padding: 10px 20px;
+        font-size: 11px;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+        transition:
+          background 0.2s,
+          color 0.2s;
+      }
+      .nav-cta:hover {
+        background: var(--ink);
+        color: var(--cream);
+      }
+      @media (max-width: 880px) {
+        nav.top ul {
+          display: none;
+        }
+      }
+
+      /* ---------- HERO ---------- */
+      .hero {
+        padding: 90px 0 60px;
+        position: relative;
+      }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 80px;
+        align-items: center;
+      }
+      .hero-left .eyebrow {
+        margin-bottom: 28px;
+      }
+      .hero h1 {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 400;
+        font-size: clamp(56px, 8.5vw, 124px);
+        line-height: 0.95;
+        letter-spacing: -0.01em;
+        margin: 0 0 28px;
+        color: var(--ink);
+      }
+      .hero h1 .it {
+        font-style: italic;
+        font-weight: 300;
+      }
+      .hero .lede {
+        max-width: 480px;
+        font-size: 17px;
+        color: var(--ink-soft);
+        margin: 0 0 38px;
+        line-height: 1.65;
+        font-weight: 300;
+      }
+      .hero-cta-row {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        background: var(--ink);
+        color: var(--cream);
+        padding: 16px 28px;
+        font-size: 12px;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+        transition: background 0.2s;
+      }
+      .btn-primary:hover {
+        background: #000;
+      }
+      .btn-primary svg {
+        width: 14px;
+        height: 14px;
+      }
+      .btn-ghost {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 16px 22px;
+        font-size: 12px;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+        color: var(--ink);
+        border-bottom: 1px solid var(--ink);
+      }
+      .hero-img {
+        position: relative;
+        aspect-ratio: 4/5;
+        background: url("https://res.cloudinary.com/dozkrpikv/image/upload/v1779482806/IMG_1363_1_vymp1v.jpg")
+          center/cover;
+        border-radius: 2px;
+      }
+      .hero-img::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+      }
+      .hero-meta {
+        position: absolute;
+        left: -24px;
+        bottom: 24px;
+        background: var(--cream);
+        padding: 18px 22px;
+        border: 1px solid var(--line);
+        max-width: 260px;
+      }
+      .hero-meta .num {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 42px;
+        line-height: 1;
+        font-weight: 500;
+      }
+      .hero-meta .lbl {
+        font-size: 11px;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-top: 6px;
+      }
+      .hero-badge {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: rgba(239, 234, 227, 0.92);
+        padding: 10px 16px;
+        font-size: 10px;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+        border: 1px solid rgba(26, 23, 20, 0.1);
+      }
+      @media (max-width: 900px) {
+        .hero {
+          padding: 50px 0 40px;
+        }
+        .hero-grid {
+          grid-template-columns: 1fr;
+          gap: 50px;
+        }
+        .hero-img {
+          order: -1;
+          max-width: 520px;
+        }
+        .hero-meta {
+          left: auto;
+          right: 16px;
+          bottom: 16px;
+        }
+      }
+
+      /* ---------- THIN MARQUEE / EVENT TYPES STRIP ---------- */
+      .strip {
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        padding: 22px 0;
+        overflow: hidden;
+      }
+      .strip-inner {
+        display: flex;
+        gap: 60px;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 22px;
+        font-style: italic;
+        font-weight: 400;
+        color: var(--ink-soft);
+        white-space: nowrap;
+        animation: slide 38s linear infinite;
+      }
+      .strip-inner span::before {
+        content: "✶";
+        margin-right: 60px;
+        color: var(--muted);
+        font-style: normal;
+      }
+      @keyframes slide {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
+
+      /* ---------- SECTION HEADERS ---------- */
+      section {
+        padding: 120px 0;
+        position: relative;
+      }
+      @media (max-width: 700px) {
+        section {
+          padding: 80px 0;
+        }
+      }
+      .sec-head {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 40px;
+        margin-bottom: 64px;
+        flex-wrap: wrap;
+      }
+      .sec-head h2 {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 400;
+        font-size: clamp(44px, 6vw, 78px);
+        line-height: 1;
+        letter-spacing: -0.01em;
+        margin: 14px 0 0;
+      }
+      .sec-head h2 .it {
+        font-style: italic;
+        font-weight: 300;
+      }
+      .sec-head .right {
+        max-width: 420px;
+        color: var(--ink-soft);
+        font-size: 16px;
+      }
+
+      /* ---------- EXPERIENCE ---------- */
+      .exp-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: center;
+      }
+      .exp-text p {
+        margin: 0 0 22px;
+        color: var(--ink-soft);
+        font-size: 17px;
+        line-height: 1.75;
+      }
+      .exp-text p:last-child {
+        margin-bottom: 0;
+      }
+      .exp-text b {
+        font-weight: 500;
+        color: var(--ink);
+      }
+      .exp-media {
+        position: relative;
+      }
+      .exp-media .a {
+        aspect-ratio: 3/4;
+        background: url("https://res.cloudinary.com/dozkrpikv/image/upload/v1779482806/IMG_1066_h75ymv.jpg")
+          center/cover;
+      }
+      .exp-media .b {
+        position: absolute;
+        right: -30px;
+        bottom: -40px;
+        width: 55%;
+        aspect-ratio: 4/5;
+        background: url("https://res.cloudinary.com/dozkrpikv/image/upload/v1779483852/IMG_1365_1_le7xpb.jpg")
+          center/cover;
+        border: 8px solid var(--cream);
+      }
+      @media (max-width: 900px) {
+        .exp-grid {
+          grid-template-columns: 1fr;
+          gap: 60px;
+        }
+        .exp-media .b {
+          position: relative;
+          right: auto;
+          bottom: auto;
+          width: 60%;
+          margin: -60px 0 0 auto;
+          border: 6px solid var(--cream);
+        }
+      }
+
+      /* ---------- WE COVER ---------- */
+      .cover {
+        background: var(--cream-2);
+      }
+      .cover .events {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px 18px;
+        justify-content: center;
+        max-width: 880px;
+        margin: 0 auto;
+      }
+      .cover .events span {
+        font-family: "Cormorant Garamond", serif;
+        font-size: clamp(28px, 3.4vw, 44px);
+        line-height: 1;
+        font-weight: 400;
+        color: var(--ink);
+        padding: 6px 4px;
+      }
+      .cover .events span:nth-child(even) {
+        font-style: italic;
+        font-weight: 300;
+      }
+      .cover .events .dot {
+        color: var(--muted);
+        font-size: 18px;
+        align-self: center;
+      }
+      .cover .sub {
+        text-align: center;
+        margin: 42px auto 0;
+        max-width: 520px;
+        color: var(--ink-soft);
+      }
+
+      /* ---------- HOW IT WORKS ---------- */
+      .steps {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+        border-top: 1px solid var(--line);
+      }
+      .step {
+        padding: 48px 32px 40px;
+        border-right: 1px solid var(--line);
+        position: relative;
+      }
+      .step:last-child {
+        border-right: none;
+      }
+      .step .num {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 64px;
+        font-weight: 300;
+        line-height: 1;
+        color: var(--ink);
+        margin-bottom: 24px;
+      }
+      .step .num small {
+        font-size: 13px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        font-family: "Jost", sans-serif;
+        color: var(--muted);
+        display: block;
+        margin-top: 8px;
+        font-weight: 400;
+      }
+      .step h4 {
+        font-family: "Jost", sans-serif;
+        font-size: 12px;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+        margin: 0 0 16px;
+        font-weight: 500;
+      }
+      .step p {
+        margin: 0;
+        color: var(--ink-soft);
+        font-size: 15px;
+        line-height: 1.65;
+      }
+      @media (max-width: 880px) {
+        .steps {
+          grid-template-columns: 1fr 1fr;
+        }
+        .step:nth-child(2n) {
+          border-right: none;
+        }
+        .step:nth-child(-n + 2) {
+          border-bottom: 1px solid var(--line);
+        }
+      }
+      @media (max-width: 540px) {
+        .steps {
+          grid-template-columns: 1fr;
+        }
+        .step {
+          border-right: none !important;
+          border-bottom: 1px solid var(--line);
+        }
+        .step:last-child {
+          border-bottom: none;
+        }
+      }
+
+      /* ---------- INVESTMENT ---------- */
+      .invest {
+        background: var(--ink);
+        color: var(--cream);
+      }
+      .invest .sec-head h2,
+      .invest .sec-head .eyebrow,
+      .invest .sec-head .right {
+        color: var(--cream);
+      }
+      .invest .sec-head .eyebrow {
+        color: rgba(239, 234, 227, 0.55);
+      }
+      .invest .sec-head .right {
+        color: rgba(239, 234, 227, 0.7);
+      }
+      .tiers {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+      .tier {
+        border: 1px solid rgba(239, 234, 227, 0.18);
+        padding: 40px 32px 36px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        transition:
+          border-color 0.25s,
+          background 0.25s;
+        position: relative;
+      }
+      .tier:hover {
+        border-color: rgba(239, 234, 227, 0.55);
+        background: rgba(239, 234, 227, 0.03);
+      }
+      .tier .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 16px;
+      }
+      .tier h3 {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 1.1;
+        margin: 0;
+        letter-spacing: -0.005em;
+      }
+      .tier h3 .it {
+        font-style: italic;
+        font-weight: 300;
+      }
+      .tier .tag {
+        font-size: 10px;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: rgba(239, 234, 227, 0.55);
+      }
+      .tier .price {
+        font-family: "Cormorant Garamond", serif;
+        font-size: clamp(38px, 4.4vw, 54px);
+        line-height: 1;
+        font-weight: 400;
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+        white-space: nowrap;
+      }
+      .tier .price small {
+        font-family: "Jost", sans-serif;
+        font-size: 11px;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+        color: rgba(239, 234, 227, 0.6);
+        font-weight: 400;
+      }
+      .tier ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+      .tier li {
+        font-size: 14px;
+        line-height: 1.55;
+        color: rgba(239, 234, 227, 0.85);
+        padding-left: 22px;
+        position: relative;
+      }
+      .tier li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 9px;
+        width: 10px;
+        height: 1px;
+        background: rgba(239, 234, 227, 0.5);
+      }
+      .tier .cta {
+        margin-top: auto;
+        padding-top: 8px;
+        font-size: 11px;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+        color: var(--cream);
+        border-top: 1px solid rgba(239, 234, 227, 0.2);
+        padding-top: 22px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .tier .cta:hover {
+        color: #fff;
+      }
+      .tier.featured {
+        background: rgba(239, 234, 227, 0.04);
+        border-color: rgba(239, 234, 227, 0.4);
+      }
+      .tier.featured .star {
+        position: absolute;
+        top: 14px;
+        right: 16px;
+        font-size: 10px;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+        color: rgba(239, 234, 227, 0.6);
+      }
+      .invest .note {
+        margin-top: 42px;
+        text-align: center;
+        color: rgba(239, 234, 227, 0.55);
+        font-size: 14px;
+        line-height: 1.7;
+        max-width: 680px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .invest .note .acc {
+        color: var(--cream);
+      }
+      @media (max-width: 1080px) {
+        .tiers {
+          grid-template-columns: 1fr;
+          max-width: 540px;
+          margin: 0 auto;
+        }
+      }
+
+      /* ---------- TESTIMONIALS ---------- */
+      .quotes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        border-top: 1px solid var(--line);
+        border-left: 1px solid var(--line);
+      }
+      .quote {
+        padding: 48px 44px;
+        border-right: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+      .quote .q {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 26px;
+        line-height: 1.4;
+        font-weight: 400;
+        color: var(--ink);
+        margin: 0 0 24px;
+        font-style: italic;
+      }
+      .quote .q::before {
+        content: "\201C";
+        margin-right: 4px;
+      }
+      .quote .q::after {
+        content: "\201D";
+      }
+      .quote .who {
+        font-size: 11px;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      @media (max-width: 780px) {
+        .quotes {
+          grid-template-columns: 1fr;
+          border-left: none;
+        }
+        .quote {
+          padding: 36px 24px;
+          border-right: none;
+        }
+      }
+
+      /* ---------- CONTACT / BOOK ---------- */
+      .book {
+        position: relative;
+        overflow: hidden;
+      }
+      .book-grid {
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 72px;
+        align-items: center;
+      }
+      .book .eyebrow {
+        margin-bottom: 24px;
+      }
+      .book h2 {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 400;
+        font-size: clamp(54px, 7vw, 98px);
+        line-height: 0.95;
+        letter-spacing: -0.01em;
+        margin: 0 0 30px;
+      }
+      .book h2 .it {
+        font-style: italic;
+        font-weight: 300;
+      }
+      .book p.intro {
+        font-size: 17px;
+        color: var(--ink-soft);
+        max-width: 460px;
+        margin: 0 0 38px;
+        line-height: 1.7;
+      }
+      .contact-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        border-top: 1px solid var(--line);
+      }
+      .contact-list a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        border-bottom: 1px solid var(--line);
+        transition: padding 0.2s;
+      }
+      .contact-list a:hover {
+        padding-left: 8px;
+      }
+      .contact-list .lbl {
+        font-size: 11px;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      .contact-list .val {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 24px;
+        font-weight: 400;
+      }
+      .contact-list .val .it {
+        font-style: italic;
+        font-weight: 300;
+      }
+      .book-media {
+        aspect-ratio: 4/5;
+        background: url("https://res.cloudinary.com/dozkrpikv/image/upload/v1779482806/IMG_0615_tmnpuw.jpg")
+          center/cover;
+        filter: grayscale(0.2);
+      }
+      @media (max-width: 900px) {
+        .book-grid {
+          grid-template-columns: 1fr;
+          gap: 50px;
+        }
+        .book-media {
+          max-width: 480px;
+        }
+      }
+
+      /* ---------- INQUIRY FORM ---------- */
+      .book-grid {
+        align-items: start;
+      }
+      .inquiry {
+        background: var(--cream-2);
+        border: 1px solid var(--line);
+        padding: 36px 36px 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+      }
+      .form-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-bottom: 18px;
+        border-bottom: 1px solid var(--line);
+        margin-bottom: 4px;
+      }
+      .form-meta {
+        font-size: 11px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      .form-meta i {
+        font-style: normal;
+        color: var(--ink);
+      }
+      .field-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+      .field {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .field label {
+        font-size: 11px;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+        font-weight: 400;
+      }
+      .field label i {
+        font-style: normal;
+        color: var(--ink);
+        margin-left: 2px;
+      }
+      .field input,
+      .field select,
+      .field textarea {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid var(--line);
+        padding: 10px 2px 12px;
+        font-family: "Jost", sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        color: var(--ink);
+        border-radius: 0;
+        transition: border-color 0.2s;
+        width: 100%;
+      }
+      .field textarea {
+        border: 1px solid var(--line);
+        padding: 14px 14px;
+        background: var(--cream);
+        resize: vertical;
+        min-height: 120px;
+        line-height: 1.55;
+      }
+      .field input:focus,
+      .field select:focus,
+      .field textarea:focus {
+        outline: none;
+        border-color: var(--ink);
+      }
+      .field input::placeholder,
+      .field textarea::placeholder {
+        color: var(--muted);
+        font-weight: 300;
+      }
+      .field select {
+        appearance: none;
+        -webkit-appearance: none;
+        background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none' stroke='%231A1714' stroke-width='1.2'><path d='M1 1l5 5 5-5'/></svg>");
+        background-repeat: no-repeat;
+        background-position: right 4px center;
+        padding-right: 22px;
+        cursor: pointer;
+      }
+      .form-foot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+        padding-top: 10px;
+        flex-wrap: wrap;
+      }
+      .form-submit {
+        border: none;
+        cursor: pointer;
+        font-family: "Jost", sans-serif;
+      }
+      .form-note {
+        margin: 0;
+        font-size: 12px;
+        color: var(--muted);
+        max-width: 260px;
+        line-height: 1.5;
+      }
+      .form-error {
+        margin-top: 4px;
+        font-size: 13px;
+        color: #7a3a2a;
+        padding: 12px 14px;
+        background: rgba(122, 58, 42, 0.06);
+        border: 1px solid rgba(122, 58, 42, 0.2);
+      }
+      .form-error a {
+        text-decoration: underline;
+      }
+
+      /* loading + success */
+      .submit-spinner {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        border: 1.5px solid rgba(239, 234, 227, 0.35);
+        border-top-color: var(--cream);
+        animation: spin 0.7s linear infinite;
+        display: none;
+      }
+      .form-submit.loading .submit-label,
+      .form-submit.loading svg {
+        display: none;
+      }
+      .form-submit.loading .submit-spinner {
+        display: inline-block;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .form-success {
+        background: var(--cream-2);
+        border: 1px solid var(--line);
+        padding: 48px 36px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 420px;
+        animation: fadeIn 0.4s ease;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(8px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .form-success-inner {
+        max-width: 380px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+      }
+      .form-success .check {
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        background: var(--ink);
+        color: var(--cream);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 6px;
+      }
+      .form-success .check svg {
+        width: 24px;
+        height: 24px;
+      }
+      .form-success h3 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 36px;
+        font-weight: 400;
+        margin: 0;
+        line-height: 1.1;
+      }
+      .form-success h3 .it {
+        font-style: italic;
+        font-weight: 300;
+      }
+      .form-success p {
+        margin: 0;
+        color: var(--ink-soft);
+        font-size: 15px;
+        line-height: 1.6;
+      }
+      .form-success p.small {
+        font-size: 13px;
+        color: var(--muted);
+      }
+      .form-success p.small a {
+        text-decoration: underline;
+      }
+      .contact-list.slim a {
+        padding: 14px 0;
+      }
+      .contact-list.slim .val {
+        font-size: 20px;
+      }
+
+      @media (max-width: 900px) {
+        .inquiry {
+          padding: 28px 22px 26px;
+        }
+        .field-row {
+          grid-template-columns: 1fr;
+          gap: 18px;
+        }
+      }
+
+      /* ---------- FOOTER ---------- */
+      footer {
+        background: var(--cream-2);
+        padding: 60px 0 40px;
+        border-top: 1px solid var(--line);
+      }
+      footer .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 24px;
+      }
+      footer .mark-lg {
+        width: 48px;
+        height: 48px;
+        background: url("https://res.cloudinary.com/dozkrpikv/image/upload/v1779482949/Untitled_Design_-_1_vy71si.jpg")
+          center/cover;
+        mix-blend-mode: multiply;
+      }
+      footer .copy {
+        font-size: 12px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+      footer .links {
+        display: flex;
+        gap: 24px;
+        font-size: 12px;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      /* small util */
+      .ornament {
+        display: inline-block;
+        color: var(--muted);
+        font-size: 14px;
+        margin: 0 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ============ NAV ============ -->
+    <nav class="top">
+      <div class="wrap">
+        <a class="brand" href="#top" aria-label="Memories with Selma">
+          <span class="mark" aria-hidden="true"></span>
+          <span class="name">Memories with <b>Selma</b></span>
+        </a>
+        <ul>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#cover">What we cover</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#investment">Packages</a></li>
+          <li><a href="#book">Contact</a></li>
+        </ul>
+        <a class="nav-cta" href="#book">Inquire</a>
+      </div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-left">
+          <div class="eyebrow">
+            Event content creation <span class="ornament">✶</span> NYC &amp;
+            beyond
+          </div>
+          <h1>
+            The moments<br />you'll <span class="it">treasure</span
+            ><br />forever.
+          </h1>
+          <p class="lede">
+            Candid, content-first coverage for weddings, milestones, and brand
+            moments. Reels and TikToks edited and delivered within 48 hours — so
+            you can post the day after, not the month after.
+          </p>
+          <div class="hero-cta-row">
+            <a class="btn-primary" href="#book">
+              Start an inquiry
+              <svg
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.4"
+              >
+                <path d="M1 8h13M9 3l5 5-5 5" />
+              </svg>
+            </a>
+            <a class="btn-ghost" href="#investment">View packages</a>
+          </div>
+        </div>
+        <div class="hero-img" aria-label="Bride at a New York venue">
+          <span class="hero-badge">Booking 2026 dates</span>
+          <div class="hero-meta">
+            <div class="num">
+              48<small
+                style="
+                  font-size: 24px;
+                  font-family: &quot;Cormorant Garamond&quot;, serif;
+                "
+                >hrs</small
+              >
+            </div>
+            <div class="lbl">Reels &amp; TikToks, edited</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="strip" aria-hidden="true">
+      <div class="strip-inner">
+        <span>Weddings</span><span>Engagements</span><span>Bridal showers</span
+        ><span>Sweet sixteens</span><span>Quinceañeras</span
+        ><span>Corporate events</span><span>Brand pop-ups</span
+        ><span>Birthdays</span><span>Baby showers</span><span>Graduations</span>
+        <span>Weddings</span><span>Engagements</span><span>Bridal showers</span
+        ><span>Sweet sixteens</span><span>Quinceañeras</span
+        ><span>Corporate events</span><span>Brand pop-ups</span
+        ><span>Birthdays</span><span>Baby showers</span><span>Graduations</span>
+      </div>
+    </div>
+
+    <!-- ============ THE EXPERIENCE ============ -->
+    <section id="experience">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <div class="eyebrow">The experience</div>
+            <h2>
+              Effortless,<br /><span class="it">authentically yours.</span>
+            </h2>
+          </div>
+          <div class="right">
+            From the first inquiry to the day the gallery lands in your inbox —
+            we make the content process feel calm, personal, and entirely your
+            own.
+          </div>
+        </div>
+
+        <div class="exp-grid">
+          <div class="exp-text">
+            <p>
+              Every step of working with us is designed to feel
+              <b>effortless and personal</b>. Our job is simple — you enjoy your
+              event, and we handle capturing every beautiful moment.
+            </p>
+            <p>
+              We cover events <b>across New York City and beyond</b>, and we'll
+              travel because no celebration is too far for the right memories.
+              Intimate gathering or large-scale production, we show up ready to
+              tell your story.
+            </p>
+            <p>
+              Our heart is drawn to <b>candid, natural moments</b> — the
+              unscripted laughs, the happy tears, the in-between seconds you
+              didn't even know were happening. Those are the ones you'll
+              treasure forever.
+            </p>
+          </div>
+          <div class="exp-media">
+            <div class="a" role="img" aria-label="Bride at reception"></div>
+            <div class="b" role="img" aria-label="First dance"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHAT WE COVER ============ -->
+    <section class="cover" id="cover">
+      <div class="wrap">
+        <div
+          class="sec-head"
+          style="
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+          "
+        >
+          <div class="eyebrow">What we cover</div>
+          <h2 style="text-align: center">
+            No event is too big <span class="it">— or too small.</span>
+          </h2>
+        </div>
+        <div class="events">
+          <span>Weddings</span><span class="dot">✶</span>
+          <span>Engagements</span><span class="dot">✶</span>
+          <span>Bridal showers</span><span class="dot">✶</span>
+          <span>Baby showers</span><span class="dot">✶</span>
+          <span>Birthdays</span><span class="dot">✶</span>
+          <span>Sweet sixteens</span><span class="dot">✶</span>
+          <span>Quinceañeras</span><span class="dot">✶</span>
+          <span>Graduations</span><span class="dot">✶</span>
+          <span>Corporate events</span><span class="dot">✶</span>
+          <span>Brand pop-ups</span><span class="dot">✶</span>
+          <span>Holiday parties</span>
+        </div>
+        <p class="sub">
+          Don't see a perfect fit? Every event is unique. Reach out — we'll
+          build something custom around your vision.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section id="how">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <div class="eyebrow">How it works</div>
+            <h2>Four steps, <span class="it">zero stress.</span></h2>
+          </div>
+          <div class="right">
+            A clear, low-friction process so you know exactly what to expect
+            from inquiry to delivery.
+          </div>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="num">01<small>Inquiry &amp; consult</small></div>
+            <p>
+              Reach out and we'll chat about your vision, vibe, and all the
+              details that make your event uniquely yours.
+            </p>
+          </div>
+          <div class="step">
+            <div class="num">02<small>Booking &amp; deposit</small></div>
+            <p>
+              Once we lock in your date with a deposit, it's officially on the
+              calendar and we start planning together.
+            </p>
+          </div>
+          <div class="step">
+            <div class="num">03<small>Event day</small></div>
+            <p>
+              We blend into the background so everything feels natural — no
+              stiff posing, just real moments captured beautifully.
+            </p>
+          </div>
+          <div class="step">
+            <div class="num">04<small>Delivery</small></div>
+            <p>
+              Raw clips in 24 hours, edited Reels and TikToks within 48 — ready
+              to download, post, and share.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INVESTMENT ============ -->
+    <section class="invest" id="investment">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <div class="eyebrow">Packages &amp; rates</div>
+            <h2>
+              Three starting<br />points, <span class="it">all custom.</span>
+            </h2>
+          </div>
+          <div class="right">
+            Every event is different, so every package is shaped around it. The
+            tiers below are starting points — final quotes are tailored after a
+            short consultation.
+          </div>
+        </div>
+
+        <div class="tiers">
+          <!-- Classic -->
+          <div class="tier">
+            <div class="top">
+              <h3>Classic <span class="it">I</span></h3>
+              <span class="tag">Half day</span>
+            </div>
+            <div class="price">From&nbsp;$400 <small>USD</small></div>
+            <ul>
+              <li>3 hours of continuous candid coverage</li>
+              <li>Behind-the-scenes &amp; guest interactions</li>
+              <li>1 edited Reel + 1 TikTok (vertical)</li>
+              <li>Raw clips in 24 hours · edits in 48</li>
+              <li>Pre-event check-ins on your vision</li>
+            </ul>
+            <a class="cta" href="#book">Inquire about Classic <span>→</span></a>
+          </div>
+
+          <!-- Signature (featured) -->
+          <div class="tier featured">
+            <span class="star">✶ Most booked</span>
+            <div class="top">
+              <h3>Signature <span class="it">II</span></h3>
+              <span class="tag">Full day</span>
+            </div>
+            <div class="price">From&nbsp;$800 <small>USD</small></div>
+            <ul>
+              <li>5 hours of continuous candid coverage</li>
+              <li>Behind-the-scenes &amp; guest interactions</li>
+              <li>2 edited Reels + 2 TikToks (vertical)</li>
+              <li>Raw clips in 24 hours · edits in 48</li>
+              <li>Shared inspiration &amp; collaborative check-ins</li>
+            </ul>
+            <a class="cta" href="#book"
+              >Inquire about Signature <span>→</span></a
+            >
+          </div>
+
+          <!-- Luxury -->
+          <div class="tier">
+            <div class="top">
+              <h3>Luxury <span class="it">III</span></h3>
+              <span class="tag">Extended</span>
+            </div>
+            <div class="price">From&nbsp;$1,000 <small>USD</small></div>
+            <ul>
+              <li>7 hours of continuous candid coverage</li>
+              <li>Behind-the-scenes &amp; guest interactions</li>
+              <li>3 edited Reels + 3 TikToks (vertical)</li>
+              <li>Raw clips in 24 hours · edits in 48</li>
+              <li>Fully personalized, end-to-end collaboration</li>
+            </ul>
+            <a class="cta" href="#book">Inquire about Luxury <span>→</span></a>
+          </div>
+        </div>
+
+        <p class="note">
+          <span class="acc">Every event is unique.</span> Pricing varies with
+          hours, destination, deliverables, and travel — the figures above are
+          starting points, not final quotes. Reach out and we'll put together
+          something tailored to your day, your vision, and your budget. ✶
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section id="kind">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <div class="eyebrow">Kind words</div>
+            <h2>
+              From the people<br />who <span class="it">trusted us.</span>
+            </h2>
+          </div>
+          <div class="right">
+            A handful of notes from clients, sent right after their events. The
+            full archive lives on Instagram — come say hi.
+          </div>
+        </div>
+
+        <div class="quotes">
+          <div class="quote">
+            <p class="q">
+              You have absolutely no idea how much you've made this day better.
+              Thank you for being a friend when I needed one — a calming
+              presence I will forever be thankful for.
+            </p>
+            <div class="who">Edona Gjonbalaj</div>
+          </div>
+          <div class="quote">
+            <p class="q">
+              Selma, thank you again so much for all your hard work today.
+              Really so grateful for all you did.
+            </p>
+            <div class="who">Sharukh Azad</div>
+          </div>
+          <div class="quote">
+            <p class="q">
+              I'm soo obsessed with the content. Everything turned out beautiful
+              — I wish I also had you for the wedding.
+            </p>
+            <div class="who">Anwaar Nassar</div>
+          </div>
+          <div class="quote">
+            <p class="q">
+              You were truly my lifesaver and like a sister throughout the day,
+              especially in the morning. All the future brides are going to be
+              so lucky to have you.
+            </p>
+            <div class="who">Saida Cutic</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BOOK / CONTACT ============ -->
+    <section class="book" id="book">
+      <div class="wrap book-grid">
+        <div class="book-left">
+          <div class="eyebrow">Ready to book?</div>
+          <h2>
+            Let's make<br /><span class="it">something</span><br />beautiful.
+          </h2>
+          <p class="intro">
+            We'd love to be part of your day. Tell us a little about your event
+            below and we'll be in touch within 48 hours. A 20% non-refundable
+            deposit secures your date — spots fill fast, so don't wait.
+          </p>
+          <div class="contact-list slim">
+            <a
+              href="/cdn-cgi/l/email-protection#b8d5ddd5d7cad1ddcbcfd1ccd0cbddd4d5d9f8dfd5d9d1d496dbd7d5"
+            >
+              <span class="lbl">Email</span>
+              <span class="val"
+                >memorieswithselma<span class="it">@gmail.com</span></span
+              >
+            </a>
+            <a
+              href="https://instagram.com/memorieswithselma"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="lbl">Instagram</span>
+              <span class="val"
+                ><span class="it">@</span>memorieswithselma</span
+              >
+            </a>
+            <a
+              href="https://tiktok.com/@memorieswithselma"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="lbl">TikTok</span>
+              <span class="val"
+                ><span class="it">@</span>memorieswithselma</span
+              >
+            </a>
+          </div>
+        </div>
+
+        <form
+          class="inquiry"
+          id="inquiry-form"
+          novalidate
+          action="https://formspree.io/f/mdajzjop"
+          method="POST"
+        >
+          <div class="form-head">
+            <span class="eyebrow">Inquiry form</span>
+            <span class="form-meta">All fields with <i>·</i> required</span>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="f-name">Your name <i>·</i></label>
+              <input
+                id="f-name"
+                name="name"
+                type="text"
+                required
+                autocomplete="name"
+              />
+            </div>
+            <div class="field">
+              <label for="f-email">Email <i>·</i></label>
+              <input
+                id="f-email"
+                name="email"
+                type="email"
+                required
+                autocomplete="email"
+              />
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="f-type">Event type <i>·</i></label>
+              <select id="f-type" name="event_type" required>
+                <option value="" disabled selected></option>
+                <option>Wedding</option>
+                <option>Engagement</option>
+                <option>Bridal shower</option>
+                <option>Baby shower</option>
+                <option>Birthday</option>
+                <option>Sweet 16 / Quinceañera</option>
+                <option>Corporate event</option>
+                <option>Brand pop-up</option>
+                <option>Holiday party</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-date">Event date</label>
+              <input id="f-date" name="event_date" type="date" />
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="f-loc">Location / venue</label>
+              <input
+                id="f-loc"
+                name="location"
+                type="text"
+                placeholder="City, state, or venue name"
+              />
+            </div>
+            <div class="field">
+              <label for="f-pkg">Package interest</label>
+              <select id="f-pkg" name="package">
+                <option value="" disabled selected></option>
+                <option>Classic — Half day</option>
+                <option>Signature — Full day</option>
+                <option>Luxury — Extended</option>
+                <option>Custom / not sure yet</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="f-msg">Tell us about your event</label>
+            <textarea
+              id="f-msg"
+              name="message"
+              rows="5"
+              placeholder="The vibe, the people, what you're hoping we capture..."
+            ></textarea>
+          </div>
+
+          <div class="form-foot">
+            <button type="submit" class="btn-primary form-submit">
+              <span class="submit-label">Send inquiry</span>
+              <span class="submit-spinner" aria-hidden="true"></span>
+              <svg
+                viewBox="0 0 16 16"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.4"
+              >
+                <path d="M1 8h13M9 3l5 5-5 5" />
+              </svg>
+            </button>
+            <p class="form-note">We'll be in touch within 48 hours.</p>
+          </div>
+          <div class="form-error" id="form-error" hidden>
+            Something went wrong sending that. Email us directly at
+            <a
+              href="/cdn-cgi/l/email-protection#107d757d7f627975636779647863757c7d7150777d71797c3e737f7d"
+              ><span
+                class="__cf_email__"
+                data-cfemail="3b565e565449525e484c524f53485e57565a7b5c565a525715585456"
+                >[email&#160;protected]</span
+              ></a
+            >.
+          </div>
+        </form>
+
+        <div class="form-success" id="form-success" hidden>
+          <div class="form-success-inner">
+            <div class="check" aria-hidden="true">
+              <svg
+                viewBox="0 0 28 28"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.4"
+              >
+                <path d="M6 14l5 5 11-12" />
+              </svg>
+            </div>
+            <span class="eyebrow">Inquiry received</span>
+            <h3>
+              Thank you, <span class="it" id="success-name">friend</span>.
+            </h3>
+            <p>
+              Your inquiry just landed in our inbox. We'll be in touch within 48
+              hours — keep an eye on the email you provided.
+            </p>
+            <p class="small">
+              In the meantime, come say hi on
+              <a
+                href="https://instagram.com/memorieswithselma"
+                target="_blank"
+                rel="noopener"
+                >Instagram</a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+      <div class="wrap row">
+        <div style="display: flex; align-items: center; gap: 16px">
+          <div class="mark-lg" aria-hidden="true"></div>
+          <div>
+            <div
+              style="
+                font-family: &quot;Cormorant Garamond&quot;, serif;
+                font-size: 20px;
+                letter-spacing: 0.16em;
+                text-transform: uppercase;
+              "
+            >
+              Memories with <b style="font-weight: 600">Selma</b>
+            </div>
+            <div
+              style="
+                font-size: 11px;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                color: var(--muted);
+                margin-top: 4px;
+              "
+            >
+              New York City &amp; beyond
+            </div>
+          </div>
+        </div>
+        <div class="links">
+          <a href="#experience">Experience</a>
+          <a href="#investment">Packages</a>
+          <a href="#book">Contact</a>
+        </div>
+        <div class="copy">© 2026 Memories with Selma</div>
+      </div>
+    </footer>
+
+<script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script>
+      // Reset form state FIRST - before anything else runs
+      document.getElementById("inquiry-form").hidden = false;
+      document.getElementById("form-success").hidden = true;
+
+      // ─────────────────────────────────────────────────────────────
+      //  INQUIRY FORM — Formspree AJAX submission
+      // ─────────────────────────────────────────────────────────────
+      (function () {
+        const form = document.getElementById("inquiry-form");
+        const success = document.getElementById("form-success");
+        const errBox = document.getElementById("form-error");
+        const btn = form.querySelector(".form-submit");
+
+        form.addEventListener("submit", async function (e) {
+          e.preventDefault();
+          errBox.hidden = true;
+
+          if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+          }
+
+          // Guard against the placeholder endpoint
+          if (form.action.includes("YOUR_FORM_ID")) {
+            errBox.hidden = false;
+            errBox.innerHTML =
+              'Form not yet connected. Email us directly at <a href="mailto:memorieswithselma@gmail.com">memorieswithselma@gmail.com</a>.';
+            return;
+          }
+
+          btn.classList.add("loading");
+          btn.disabled = true;
+
+          try {
+            const res = await fetch(form.action, {
+              method: "POST",
+              body: new FormData(form),
+              headers: { Accept: "application/json" },
+            });
+            if (!res.ok) throw new Error("Submission failed");
+
+            // Success
+            const firstName =
+              form.elements["name"].value.split(" ")[0] || "friend";
+            document.getElementById("success-name").textContent = firstName;
+
+            // Hide form and show success
+            form.hidden = true;
+            success.hidden = false;
+
+            // Smooth-scroll success into view
+            const top =
+              success.getBoundingClientRect().top + window.scrollY - 100;
+            window.scrollTo({ top, behavior: "smooth" });
+          } catch (err) {
+            errBox.hidden = false;
+            btn.classList.remove("loading");
+            btn.disabled = false;
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
