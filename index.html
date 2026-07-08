@@ -147,9 +147,99 @@
         background: var(--ink);
         color: var(--cream);
       }
+      /* hamburger button */
+      .nav-hamburger {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 36px;
+        height: 36px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 4px;
+        margin-left: 12px;
+      }
+      .nav-hamburger span {
+        display: block;
+        width: 22px;
+        height: 1.5px;
+        background: var(--ink);
+        transition: transform 0.25s, opacity 0.25s;
+        transform-origin: center;
+      }
+      .nav-hamburger[aria-expanded="true"] span:nth-child(1) {
+        transform: translateY(6.5px) rotate(45deg);
+      }
+      .nav-hamburger[aria-expanded="true"] span:nth-child(2) {
+        opacity: 0;
+      }
+      .nav-hamburger[aria-expanded="true"] span:nth-child(3) {
+        transform: translateY(-6.5px) rotate(-45deg);
+      }
+
+      /* mobile nav drawer */
+      .mobile-nav {
+        display: none;
+        position: fixed;
+        inset: 70px 0 0 0;
+        background: rgba(239, 234, 227, 0.97);
+        backdrop-filter: blur(14px);
+        z-index: 49;
+        padding: 32px 28px 40px;
+        flex-direction: column;
+        gap: 0;
+        border-top: 1px solid var(--line);
+        overflow-y: auto;
+      }
+      .mobile-nav.open {
+        display: flex;
+      }
+      .mobile-nav a {
+        display: block;
+        font-size: 13px;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+        color: var(--ink-soft);
+        padding: 18px 0;
+        border-bottom: 1px solid var(--line);
+        transition: color 0.2s;
+      }
+      .mobile-nav a:first-child {
+        border-top: 1px solid var(--line);
+      }
+      .mobile-nav a:hover {
+        color: var(--ink);
+      }
+      .mobile-nav .mobile-cta {
+        margin-top: 28px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--ink);
+        padding: 14px 28px;
+        font-size: 11px;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: var(--ink);
+        transition: background 0.2s, color 0.2s;
+        border-bottom: 1px solid var(--ink);
+      }
+      .mobile-nav .mobile-cta:hover {
+        background: var(--ink);
+        color: var(--cream);
+      }
+
       @media (max-width: 880px) {
         nav.top ul {
           display: none;
+        }
+        .nav-cta {
+          display: none;
+        }
+        .nav-hamburger {
+          display: flex;
         }
       }
 
@@ -281,6 +371,7 @@
         .hero-img {
           order: -1;
           max-width: 520px;
+          margin: 0 auto;
         }
         .hero-meta {
           left: auto;
@@ -1091,8 +1182,21 @@
           <li><a href="#book">Contact</a></li>
         </ul>
         <a class="nav-cta" href="#book">Inquire</a>
+        <button class="nav-hamburger" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </nav>
+
+    <!-- mobile nav drawer -->
+    <div class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Navigation">
+      <a href="#experience" class="mobile-nav-link">Experience</a>
+      <a href="#cover" class="mobile-nav-link">What we cover</a>
+      <a href="#how" class="mobile-nav-link">How it works</a>
+      <a href="#investment" class="mobile-nav-link">Packages</a>
+      <a href="#book" class="mobile-nav-link">Contact</a>
+      <a href="#book" class="mobile-cta">Inquire</a>
+    </div>
 
     <!-- ============ HERO ============ -->
     <header class="hero" id="top">
@@ -1706,6 +1810,27 @@
       src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
     ></script>
     <script>
+      // Hamburger menu
+      (function () {
+        const toggle = document.getElementById("nav-toggle");
+        const drawer = document.getElementById("mobile-nav");
+        function close() {
+          drawer.classList.remove("open");
+          toggle.setAttribute("aria-expanded", "false");
+          toggle.setAttribute("aria-label", "Open menu");
+          document.body.style.overflow = "";
+        }
+        toggle.addEventListener("click", function () {
+          const open = drawer.classList.toggle("open");
+          toggle.setAttribute("aria-expanded", open ? "true" : "false");
+          toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+          document.body.style.overflow = open ? "hidden" : "";
+        });
+        drawer.querySelectorAll("a").forEach(function (a) {
+          a.addEventListener("click", close);
+        });
+      })();
+
       // Reset form state FIRST - before anything else runs
       document.getElementById("inquiry-form").hidden = false;
       document.getElementById("form-success").hidden = true;
